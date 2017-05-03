@@ -1,0 +1,149 @@
+//colors
+$main-color: #9E9E9E
+$dark-color: #757575
+
+$angular: #E57373
+$react: #61D9FA
+$vue: #00BFA5
+
+$nav: #EEEEEE
+
+//media queries
+$phone: 640px
+$tablet: 768px
+$desktop: 1024px
+
+//mixins
+=transition($property, $duration, $animation)
+  transition: $property, $duration, $animation
+
+=align-center
+  //flexbox
+  display: flex
+  align-items: center //vertical
+  justify-content: center //horizontal
+
+
+/* Body
+body
+  background-color: #FAFAFA
+  font-family: "Source Sans Pro", Arial, sans-serif
+  font-weight: 300
+  line-height: 1.6
+  font-size: 16px
+
+/* Box Sizing
+*
+  box-sizing: border-box
+  +transition(all, 0.3s, ease-in-out)
+
+/* Container
+.container
+  .content
+    position: relative
+    width: 80%
+    margin: 0 auto
+
+    @media (max-width: $phone)
+      width: 100%
+
+    .section
+      +align-center
+      height: 80vh
+
+      .logo
+        float: left
+        width: 25%
+        padding-top: 10px
+        margin: 0
+        text-align: center
+
+        //media queries
+        @media (max-width: $phone)
+          width: auto
+          margin: 0 20px
+
+        .image
+          width: 60px
+
+        .name
+          font-size: 18px
+          font-weight: 300
+          color: $main-color
+          margin-top: 0
+
+      .intro
+        width: 60%
+        font-size: 14px
+        color: $main-color
+        padding: 0 30px
+
+        //media queries
+        @media (max-width: $phone)
+          width: 100%
+
+
+    .angular
+      border-left: 2px solid $angular
+
+      .link
+        color: $angular
+        text-decoration: none
+
+        &:hover
+          font-weight: 400
+
+    .react
+      border-left: 2px solid $react
+
+      .link
+        color: $react
+        font-weight: 300
+        text-decoration: none
+
+        &:hover
+          font-weight: 400
+
+    .vue
+      border-left: 2px solid $vue
+
+      .link
+        color: $vue
+        text-decoration: none
+
+        &:hover
+          font-weight: 400
+.search
+  position: relative
+  padding-bottom: 25px
+  padding-top: 25px
+  text-align: center
+  input
+    box-sizing: border-box
+    width: 320px
+    height: 48px
+    background: #fcfcfc
+    border: 1px solid #aaa
+    border-radius: 5px
+    font-size: 16px
+    text-indent: 40px
+    &:focus
+      outline: none
+      border: 1px solid #FF9800
+  .fa-search
+    color: #727272
+    position: absolute
+    top: 14px
+    left: 32px
+    width: 16px
+
+.center
+  margin: 0 auto
+  width: 360px
+h1
+  text-align: center
+p
+  overflow: hidden
+  display: -webkit-box
+  -webkit-line-clamp: 4
+  -webkit-box-orient: vertical
