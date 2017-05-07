@@ -135,7 +135,7 @@ class PostsController extends Controller
      */
     public function all()
     {
-        $posts = Cache::remember('post', 22*60, function() {
+        $posts = Cache::remember('post', 0.5, function() {
             return Post::all();
         });
 
