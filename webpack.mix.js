@@ -15,3 +15,7 @@ mix.js('node_modules/bootstrap/dist/js/bootstrap.js', 'public/js/app.js')
   .react('resources/assets/js/app.jsx', 'public/js/front.js')
   .sass('resources/assets/sass/app.scss', 'public/css')
   .sass('resources/assets/sass/front.sass', 'public/css');
+
+if (mix.config.inProduction) {
+    mix.version();
+}
