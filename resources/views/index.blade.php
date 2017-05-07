@@ -5,9 +5,9 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Bloguinho</title>
 
-        <link rel="stylesheet" href="css/front.css">
+        <link rel="stylesheet" href="{{ mix('css/front.css') }}">
     </head>
     <body>
     <div class="page">
@@ -15,5 +15,5 @@
         <main id="front" class="container"></main>
     </div>
     </body>
-    <script src="js/front.js" ></script>
+    <script src="{{ mix('js/front.js') }}" ></script>
 </html>
